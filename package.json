@@ -1,0 +1,56 @@
+{
+  "name": "ztrans",
+  "displayName": "ztrans",
+  "description": "异步翻译插件(不卡顿，越用越快)",
+  "version": "0.0.8",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "publisher": "kenshinl",
+  "repository": {
+    "url": "https://github.com/LiuYinCarl/ztrans"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:ztrans.translate"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ztrans.translate",
+        "title": "translate: 翻译光标下的单词"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "ztrans.translate",
+        "key": "Ctrl+4",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.60.0",
+    "@vscode/test-electron": "^2.1.3",
+    "eslint": "^8.16.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "qs": "^6.10.5"
+  },
+  "icon": "images/logo.png"
+}
