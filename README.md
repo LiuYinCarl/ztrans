@@ -12,6 +12,8 @@ ztrans 是一款开发给使用 VSCode 阅读代码的人使用的翻译插件�
 4. 单词翻译默认展示时间 7 秒，每一个义项都可以仔细查看。
 5. 使用有道翻译作为翻译源
 
+![feature](https://github.com/LiuYinCarl/ztrans/blob/main/images/feature.png)
+
 ## Extension Settings
 
 默认快捷键 Ctrl+4
