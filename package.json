@@ -2,7 +2,7 @@
   "name": "ztrans",
   "displayName": "ztrans",
   "description": "异步翻译插件(不卡顿，越用越快)",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "engines": {
     "vscode": "^1.60.0"
   },
