@@ -17,7 +17,9 @@ async function youdaoTranslate(text) {
     axios.post(url, qs.stringify(args), {})
       .then(res => {
         try {
-          resolve(res.data.basic.explains.join(" ;"));
+          var trans_str = res.data.basic.explains.join(" ;");
+          trans_str = trans_str.replace(/[\r\n]/g, " ");
+          resolve(trans_str);
       } catch (error) {
           resolve("单词未找到释义");
       }})
